@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfoilio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "medeiquerie.css">
+
+</head>
+<body>
+    
+  <div id="desktop-nav">
+    <nav >
+        <div class="logo">Portfolio</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Profile</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#desktop-nav" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section id="profile">
+        <div class="section__pic-container">
+          <img  src="./assets/p11.png" alt="Suba Archana profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p2">Hello, I'm</p>
+          <h1 class="title">Suba Archana</h1>
+          <p class="section__text__p2">Python Developer</p>
+          <div class="btn-container">
+            <button>
+                <a href="./assets/resume.pdf" download style="text-decoration: none" class="btn btn-color-2">Download CV</a>
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/subaarchana/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/subaarchana'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/p00.jpg"
+              alt="Profile picture"
+             
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h2>Experience</h2>
+                <p>1 year <br />IT Support Technician</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h2>Education</h2>
+                <p>B.Sc. Information Technology & Management<br /><br>Python & IT Security(5 months)</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p class="about_p">
+                Results-driven Python Developer with a strong commitment to delivering high-quality software solutions.
+Leveraging excellent communication skills to collaborate seamlessly with cross-functional teams, I aim to
+contribute to a collaborative work environment where innovative ideas thrive. My proactive and productive
+approach ensures the timely completion of projects, aligning with organizational goals and achieving
+targeted objectives.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <!-- project -->
+      <section id="projects">
+        
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/books.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Online Book Shop</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/subaarchana/Book_shop_project.git'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/circus.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Circus Restaurent</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/subaarchana/CIRCUS_RESTAURANT.git'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <!-- contact -->
+      <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:subaarchana@gmail.com">Subaarchana@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+             <li><a href="#desktop-nav">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Suba Archana. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  
+  
+  
+</body>
+</html>
